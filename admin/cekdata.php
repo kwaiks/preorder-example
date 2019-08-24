@@ -1,6 +1,4 @@
 <?php
-    include('../conne.php');
-
     session_start();  
     if(!isset($_SESSION['userid'])){
         header('Location: index.php');
@@ -16,25 +14,6 @@
        
         header('Location: index.php');
        }
-    
-       $main = $dblink->query("SELECT kode FROM item_list");
-       $mains = array();
-       while($row = $main->fetch_assoc()){
-           $mains[] = $row;
-       };
-
-       echo count($mains);
-
-       foreach($mains as $data){
-           $item.$data['kode'] = $dblink->query("SELECT * FROM order_list WHERE kode = {$data['kode']} ");
-           $items.$data['kode'] = array();
-           while($row = $items.$data['kode']->fetch_assoc())
-           { $items.$data['kode'][] = $row; 
-            };
-       }
-
-       echo json_encode($itemse1);
-    $dblink->close();
 ?>
 
 <!DOCTYPE html>
