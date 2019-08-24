@@ -1,0 +1,61 @@
+body {
+    height: 100%;
+    background: url("../image/bg.png")no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+}
+
+.modal{
+    color: #000;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.img-thumbnail{
+    transition: transform .2s;
+}
+
+.img-thumbnail:hover {
+    transform: scale(1.5);
+    position: relative;
+	z-index: 9;
+}
+
+.list-group-item{
+    border: 0 none;
+}
+
+.img-thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    background: transparent;
+}
+
+.container {
+    max-width: 960px;
+  }
+.row h6, li {
+    color:#000;
+}
+.navbar-brand{
+    color: #fff;
+}
+.nav-item {
+    color: #cacaca;
+    border-bottom: .25rem solid transparent;
+}
+.active {
+    color: white;
+    border-bottom-color: #fff;
+}
+
+.nav-item:hover {
+    color: #fff;
+    border-bottom-color: #000;
+}
+
